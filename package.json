@@ -1,0 +1,52 @@
+{
+  "name": "webstack-screenshot",
+  "version": "2.0.0-beta.5",
+  "description": "📸网站截图 API | Website Screenshot API ",
+  "main": "dist/src/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node ./src/server.ts",
+    "start:hot": "nodemon ./src/server.ts",
+    "lint": "eslint src && prettier --check src",
+    "lint:fix": "eslint --fix src && prettier --check --write src"
+  },
+  "keywords": [
+    "webstack",
+    "screenshot",
+    "page",
+    "website",
+    "site",
+    "screen",
+    "snapshot",
+    "img",
+    "image"
+  ],
+  "author": "Lete <me@imlete.cn> (https://blog.imlete.cn)",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/Lete114/WebStack-Screenshot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lete114/WebStack-Screenshot.git"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^116.0.0",
+    "body-data": "^1.0.6",
+    "puppeteer": "^21.2.1",
+    "puppeteer-core": "^21.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.10.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
